@@ -79,7 +79,7 @@ curl -X POST http://127.0.0.1:8000/api/devices/12345/unlockDevice -H "Authorizat
 ---
 
  📝 End Note
-This project started as a **backend exploration in Laravel + PHP**, but has been extended into a basic **Mobile Device Management (MDM)** system.  
+This project started as a **backend assignment in Laravel + PHP**, but has been extended into a basic **Mobile Device Management (MDM)** system.  
 
 While it’s currently **API-only**, the design makes it easy to:  
 - 🔌 Plug into a frontend  
