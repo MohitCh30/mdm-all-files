@@ -1,0 +1,116 @@
+{
+    "info": {
+        "name": "Laravel MDM API Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_postman_id": "b4b12345-6789-4321-abcd-ef0987654321"
+    },
+    "item": [
+        {
+            "name": "Register Device",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded"
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "device_id",
+                            "value": "A123"
+                        },
+                        {
+                            "key": "user_name",
+                            "value": "Alice"
+                        },
+                        {
+                            "key": "location",
+                            "value": "Delhi"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/devices/register",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "devices",
+                        "register"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Lock Device (Updated)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/x-www-form-urlencoded"
+                    }
+                ],
+                "body": {
+                    "mode": "urlencoded",
+                    "urlencoded": [
+                        {
+                            "key": "reason",
+                            "value": "Lost phone"
+                        }
+                    ]
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/devices/A123/lockDevice",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "devices",
+                        "A123",
+                        "lockDevice"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Unlock Device (Updated)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer YOUR_TOKEN"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/devices/A123/unlockDevice",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "devices",
+                        "A123",
+                        "unlockDevice"
+                    ]
+                }
+            }
+        }
+    ]
+}
