@@ -1,6 +1,6 @@
- 📱 Laravel Backend for Mobile Device Management (MDM)
+# 📱 Laravel Backend for Mobile Device Management (MDM)
 
-Overview
+## Overview
 This project is a **Laravel-powered backend system** for managing Android devices’ lock and unlock states.  
 It provides **REST APIs** to register devices, lock devices with reasons, and securely unlock devices using **Laravel Sanctum authentication**.
 
@@ -9,7 +9,7 @@ It provides **REST APIs** to register devices, lock devices with reasons, and se
 
 ---
 
-✨ Features
+## ✨ Features
 - 📌 Device registration (track devices by ID, user, and location)  
 - 🔒 Lock a device with a reason (e.g., *“Lost phone”*)  
 - 🔓 Unlock a device securely with Sanctum-authenticated requests  
@@ -18,7 +18,7 @@ It provides **REST APIs** to register devices, lock devices with reasons, and se
 
 ---
 
- 🛠 Setup & Testing
+## 🛠 Setup & Testing
 
  1. Install dependencies
 ```bash
@@ -78,7 +78,7 @@ curl -X POST http://127.0.0.1:8000/api/devices/12345/unlockDevice -H "Authorizat
 
 ---
 
- 📝 End Note
+## 📝 End Note
 This project started as a **backend assignment in Laravel + PHP**, but has been extended into a basic **Mobile Device Management (MDM)** system.  
 
 While it’s currently **API-only**, the design makes it easy to:  
