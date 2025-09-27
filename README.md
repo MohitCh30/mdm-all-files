@@ -44,7 +44,7 @@ Postman_Collection_Updated.json
 
 ---
 
- 🚀 API Examples
+ ### 🚀 API Examples
 
  📌 Register a Device
 ```bash
